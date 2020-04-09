@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IloveHIPS</title>
+    
+    
+    <style>    
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .box{
+         font-family: sans-serif;   
+        }
+        
+        .container{
+         display: grid;
+         grid-template-columns: 150px 1fr;
+         line-height: 18px;
+            
+     
+        }
+        
+        .logo {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        
+        .content {
+            position: relative;
+            top:80px;
+            margin-left: 150px;
+            font-size: 13px;
+            padding-right: 100px;
+            
+        }
+        
+        .heart{
+         position: relative;
+         left: 10px;
+         margin-top: 8px;
+         
+        
+        }
+        
+        .nav {
+            position: fixed;
+            z-index: 5;
+        }
+        
+        .info {
+            position: relative;
+            top:100px;
+            left:10px;
+            
+            font-size:13px;
+        }
+        
+        
+        
+        
+        
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top:10px;
+  left:0px;
+  color: black;
+  font-size: 13px;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 13px;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+        
+        
+     </style>    
+     
+    
+     
+</head>
+
+ 
+<body>
+<div class="box">     
+     <div class="nav">
+                <a href="../../index.html">
+                <img src="../logo.png" width="55px" class="logo">
+                </a>
+                    
+                    <a href="../../about.html">
+                    <img src="../heart1.png" width="20px" class="heart">
+                    </a>
+
+                    <a href="../../newartist.html">
+                    <img src="../heart2.png" width="20px" class="heart">
+                    </a>
+
+                    <a href="../../exhibition.html">
+                    <img src="../heart3.png" width="20px" class="heart">
+                    </a>
+                    
+
+            </div>
+            
+      <div class="container">
+           
+           
+           <div class="info">
+               <p> 이종혁 </p>
+               
+               
+               <p> onghyuk@gamil.com <br> @onghyuk</p>
+               
+               <p style="margin-top: 50px;"> works </p>
+               <p> <a href="bingbing.html">빙빙(looking for) (2019~)</a></p>
+               <p> <a href="../lost/lost.html">lost (2019~)</a></p>
+               <p> <a href="../2019gaduate/graduate.html">2019 홍익시디 졸업주간을 위한 포트레이트 (2019~)</a></p>
+               <p> <a href="../o-ya-zi/oyazi.html">오야지 (2018)</a></p>
+            
+               
+             
+           </div>
+                
+            
+            <div class="content">
+                    <p style="margin-top: 30px;"> 빙빙(looking for) (2019~) </p>
+                    <p>실종자를 찾아 달라는 내용의 현수막을 따라가며 촬영한 사진 연작. <br>
+도시 공간에 산재한 현수막을 지도에 표시해나가면, 일종의 동선을 형성한다다. <br>이종혁은 이 동선을 따라 가며 사진을 찍고. 그의 행위에 대한 사람들의 반응과 관심을 수집한다.</p>
+                   
+                  
+                    
+                    <div class="mySlides fade">
+                    <img src="01.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="02.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="03.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="04.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="05.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="06.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="07.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="08.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="09.jpg" width="80%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="10.jpg" width="80%">
+                    </div>
+                    
+                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+ </div>       
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+</body>
+</html>
