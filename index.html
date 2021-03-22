@@ -10,6 +10,9 @@
 <body>
    
    <div class="wrapper">
+      <div id="dark">
+          <p>HIPS 웹사이트는 3월 23일 오픈 예정입니다. </p>
+      </div>
        <div id="opening">
                <div id="lovehips" onclick="lovehips()"></div>
                <div id="siso" onclick="siso()"></div>
@@ -360,8 +363,12 @@ function lovehips() {
   document.getElementById("sisopages").style.height = "0vh";
   document.getElementById("opening").style.height = "4vh";
   document.getElementById("sangha").style.width = "85vw";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("video").style.display = "none";    
+   document.getElementById("works").style.left = "-30vw"; 
+  document.getElementById("lovehipspages").style.gridTemplateColumns = "0px 1fr 0px";     
+  document.getElementById("about").style.opacity = "0";
+  
+  document.getElementById("video").style.opacity = "0";  
+       
         
 }  
     
@@ -369,7 +376,11 @@ function lovehips() {
   
   document.getElementById("sangha").style.width = "0vw";
   document.getElementById("about").style.display = "block";
-  document.getElementById("video").style.display = "block";    
+  document.getElementById("video").style.display = "block";
+  document.getElementById("lovehipspages").style.gridTemplateColumns = "1fr 1fr 1fr";     
+  document.getElementById("about").style.opacity = "100";
+  
+  document.getElementById("video").style.opacity = "100"; 
         
 }  
     
