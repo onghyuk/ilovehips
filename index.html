@@ -2,128 +2,379 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IloveHIPS</title>
-    
-    
-    <style>    
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        .box {
-            font-family: sans-serif;
-        }
-        
-        .container{
-         
-         
-         line-height: 18px;
-            
-     
-        }
-        
-        .logo {
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-        
-        .content {
-            position: relative;
-            top:0px;
-            margin-left:10px;
-            margin-top: 50px;
-            font-size: 13px;
-            padding-right: 100px;
-            
-            
-            
-        }
-        
-        .heart{
-         position: relative;
-         left: 10px;
-         margin-top: 0px;
-         
-        
-        }
-        
-        .nav {
-            position: fixed;
-            top:8px;
-            z-index: 5;
-        }
-        
-        .info {
-            position: relative;
-            top:100px;
-            left:10px;
-            
-            font-size:13px;
-        }
-        
-
-        
-     </style>    
-     
-      
-     <script type="text/javascript">
-    var love_hips_main_img = ["01.jpg", "02.jpg", "03.jpg", "04.jpg"];
-         
-    function getRandomImage(imgAr, path) {
-    path = path || 'lovehips/'; 
-    var num = Math.floor( Math.random() * imgAr.length );
-    var img = imgAr[ num ];
-    var imgStr = '<img src="' + path + img + '" alt = "">';
-    document.write(imgStr); document.close();
-}
-     </script>
-     
+    <title>ILOVEHIPS</title>
+    <link rel="stylesheet" href="ilovehips.css">
+ 
     
 </head>
-
- 
 <body>
-     <div class="box">
-            <div class="nav">
-                <a href="index.html">
-                <img src="img/logo.png" width="55px" class="logo">
-                </a>
-                    
-                    <a href="about.html">
-                    <img src="img/heart1.png" width="20px" class="heart">
-                    </a>
-
-                    <a href="newartist.html">
-                    <img src="img/heart2.png" width="20px" class="heart">
-                    </a>
-
-                    <a href="exhibition.html">
-                    <img src="img/heart3.png" width="20px" class="heart">
-                    </a>
-                    
-
-            </div>
-            
-            <div class="container">
-           
-           
-            
+   
+   <div class="wrapper">
+       <div id="opening">
+               <div id="lovehips" onclick="lovehips()"></div>
+               <div id="siso" onclick="siso()"></div>
+       </div>
+       <div class="container">
+               <div id="lovehipspages">
+                  
+                   <div id="about">
+                   <div class="head">
+                   <img src="img/heart1.png" style="width: 3%;">
+                   <span>About</span>
+                   </div>
+                    <div class="info">
+                <p>홍익대학교 시각디자인과 사진 소모임 HIPS(HongIk Photography Study)는 1994년 만들어진 이후,
+                <br>순수예술과 디자인의 경계에서 사진 매체 고유의 언어를 활용한 독창적 작업들을 이어왔다. <br><br>
+                HIPS는 구성원 각자의 사고와 개성의 표현, 사진 매체에 <br> 대한 이론적, 실질적 연구 및 이를
+                바탕으로 한 실험적 <br> 작업을 지향하며, 매주 회의와 정기적인 세미나, 워크숍, <br> 전시 활동을
+                통해 목표하는 바를 실천한다.</p>
                 
-            
-                <div class="content">
-                    
+                
+                <p style="margin-top: 100px; font-size: 12px;"><a href="https://www.instagram.com/hips_official/?hl=ko">Instagram</a>
+                </div>   
+                   </div>
+                   
+                   <div id="works">
+                    <div class="head">
+                   <img src="img/heart2.png" style="width: 3%;">
+                   <span>Works</span>
+                   </div>
+                   
+                   <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/sangha/10-3.jpg" style="width: 100%;" onclick="sangha()">
+                       </div>
+                       <span>김상하</span>
+                   </div>
+                   
+                   <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/jaehoon/4.jpg" style="width: 150%;">
+                       </div>
+                       <span>김재훈</span>
+                   </div>
+                   
+                   <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/jiyae/1.jpg" style="width: 150%;">
+                       </div>
+                       <span>김지예</span>
+                   </div>
+                   
+                   <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/hangyeol/07.jpg" style="width: 100%;">
+                       </div>
+                       <span>김한결</span>
+                   </div>
+                   
+                   <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/dohyun/1.jpg" style="width: 100%;">
+                       </div>
+                       <span>박도현</span>
+                   </div>
+                   
+                   <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/taeho/19-1.png" style="width: 130%;">
+                       </div>
+                       <span>박태호</span>
+                   </div>
+                   
+                    <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/elison/01.jpg" style="width: 150%;">
+                       </div>
+                       <span>앨리손</span>
+                   </div>
+                   
+                   <div class="work">
+                       <div class="worksmallimg">
+                       <img src="hips/sangwoon/1.jpg" style="width: 100%;">
+                       </div>
+                       <span>정상운</span>
+                   </div>
+                   
+                   
+                   
+                   
+                   </div>
+                   
+                   <div id="video">
+                       <div class="head">
+                   <img src="img/heart3.png" style="width: 3%;">
+                   <span>Video</span>
+                   
+                   </div>
+                   <div class="content">
+                    <div class="videowrapper"> 
+                    <iframe src="https://player.vimeo.com/video/404304783" width="100%" height="250" frameborder="0" allow="autoplay; fullscreen"> </iframe>
+                    </div>
                      
-                  <a href="index.html" class="img"><script type="text/javascript">getRandomImage(love_hips_main_img); </script>   
-                  </a>
-                                                                                                   
-                
+                    <div class="videowrapper">  
+                    <iframe src="https://player.vimeo.com/video/404305405" width="100%" height="250" frameborder="0" allow="autoplay; fullscreen"> </iframe>
+                    </div>
+                    
+                    <div class="videowrapper"> 
+                    <iframe src="https://player.vimeo.com/video/404308978" width="100%" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="videowrapper"> 
+                    <iframe src="https://player.vimeo.com/video/204843895" width="100%" height="350" frameborder="0" allow="autoplay; fullscreen"></iframe>
+                    </div>
+                       
+                    <div class="videowrapper">    
+                    <iframe src="https://player.vimeo.com/video/158140760" width="100%" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                       </div>
+                       
+                    <div class="videowrapper"> 
+                    <iframe src="https://player.vimeo.com/video/122316867" width="100%" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                       </div>
+                       
+                       
+                    <div class="videowrapper"> 
+                    <iframe src="https://player.vimeo.com/video/87996286" width="100%" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                       </div>
+                       
+                       
+                    <div class="videowrapper"> 
+                    <iframe src="https://player.vimeo.com/video/59128328" width="100%" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                       </div>
                 </div>
-            </div>
-    </div>
-       
-       
+                   </div>
+                   
+                   <div id="workswrapper">
+                       <div id="sangha" class="work">
+                        <span onclick="back()" class="back">&rarr;</span>   
+                           
+                           
+                              <div class="sisowork">
+                              
+                              <div class="name">
+                               <p>김상하</p>
+                               <p>무제, 2020 <br> 흑백 포트레이트 연습 습작</p>
+                           </div><img src="siso/sangha/p1.jpg" style="width: 40%">
+                           <img src="siso/sangha/p2.jpg" style="width: 40%">
+                           <img src="siso/sangha/p3.jpg" style="width: 40%">
+                           <img src="siso/sangha/p4.jpg" style="width: 40%">
+                           <img src="siso/sangha/p5.jpg" style="width: 40%">
+                           <img src="siso/sangha/p6.jpg" style="width: 40%">
+                           <img src="siso/sangha/p7.jpg" style="width: 40%">
+                           <img src="siso/sangha/p8.jpg" style="width: 40%">
+                           <img src="siso/sangha/p9.jpg" style="width: 40%">
+                           <img src="siso/sangha/p10.jpg" style="width: 40%">
+                           <img src="siso/sangha/p11.jpg" style="width: 40%">
+                           <img src="siso/sangha/p12.jpg" style="width: 40%">
+                           <img src="siso/sangha/p13.jpg" style="width: 40%">
+                           <img src="siso/sangha/p14.jpg" style="width: 40%">
+                           <img src="siso/sangha/p15.jpg" style="width: 40%">
+                           <img src="siso/sangha/p16.jpg" style="width: 40%">
+                           <img src="siso/sangha/p17.jpg" style="width: 40%">
+                           
+                           </div>
+                           
+                           <div class="previouswork">
+                            <img src="hips/sangha/1.jpg" style="width: 40%">
+                            <img src="hips/sangha/10-2.jpg" style="width: 40%">
+                            <img src="hips/sangha/3.jpg" style="width: 40%">
+                            <img src="hips/sangha/4.jpg" style="width: 40%">
+                            <img src="hips/sangha/5.jpg" style="width: 40%">
+                            <img src="hips/sangha/6.jpg" style="width: 40%">
+                            <img src="hips/sangha/9.jpg" style="width: 40%">
+                            <img src="hips/sangha/10.jpg" style="width: 40%">
+                            
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div id="sisopages">
+                   <div id="sisotext">
+                       
+                   </div>
+                   
+                   <div id="sisoimg">
+                       <div id="book">
+<img src=	"	book/	1	.jpg	"	class="bookimg">
+<img src=	"	book/	2	.jpg	"	class="bookimg">
+<img src=	"	book/	3	.jpg	"	class="bookimg">
+<img src=	"	book/	4	.jpg	"	class="bookimg">
+<img src=	"	book/	5	.jpg	"	class="bookimg">
+<img src=	"	book/	6	.jpg	"	class="bookimg">
+<img src=	"	book/	7	.jpg	"	class="bookimg">
+<img src=	"	book/	8	.jpg	"	class="bookimg">
+<img src=	"	book/	9	.jpg	"	class="bookimg">
+<img src=	"	book/	10	.jpg	"	class="bookimg">
+<img src=	"	book/	11	.jpg	"	class="bookimg">
+<img src=	"	book/	12	.jpg	"	class="bookimg">
+<img src=	"	book/	13	.jpg	"	class="bookimg">
+<img src=	"	book/	14	.jpg	"	class="bookimg">
+<img src=	"	book/	15	.jpg	"	class="bookimg">
+<img src=	"	book/	16	.jpg	"	class="bookimg">
+<img src=	"	book/	17	.jpg	"	class="bookimg">
+<img src=	"	book/	18	.jpg	"	class="bookimg">
+<img src=	"	book/	19	.jpg	"	class="bookimg">
+<img src=	"	book/	20	.jpg	"	class="bookimg">
+<img src=	"	book/	21	.jpg	"	class="bookimg">
+<img src=	"	book/	22	.jpg	"	class="bookimg">
+<img src=	"	book/	23	.jpg	"	class="bookimg">
+<img src=	"	book/	24	.jpg	"	class="bookimg">
+<img src=	"	book/	25	.jpg	"	class="bookimg">
+<img src=	"	book/	26	.jpg	"	class="bookimg">
+<img src=	"	book/	27	.jpg	"	class="bookimg">
+<img src=	"	book/	28	.jpg	"	class="bookimg">
+<img src=	"	book/	29	.jpg	"	class="bookimg">
+<img src=	"	book/	30	.jpg	"	class="bookimg">
+<img src=	"	book/	31	.jpg	"	class="bookimg">
+<img src=	"	book/	32	.jpg	"	class="bookimg">
+<img src=	"	book/	33	.jpg	"	class="bookimg">
+<img src=	"	book/	34	.jpg	"	class="bookimg">
+<img src=	"	book/	35	.jpg	"	class="bookimg">
+<img src=	"	book/	36	.jpg	"	class="bookimg">
+<img src=	"	book/	37	.jpg	"	class="bookimg">
+<img src=	"	book/	38	.jpg	"	class="bookimg">
+<img src=	"	book/	39	.jpg	"	class="bookimg">
+<img src=	"	book/	40	.jpg	"	class="bookimg">
+<img src=	"	book/	41	.jpg	"	class="bookimg">
+<img src=	"	book/	42	.jpg	"	class="bookimg">
+<img src=	"	book/	43	.jpg	"	class="bookimg">
+<img src=	"	book/	44	.jpg	"	class="bookimg">
+<img src=	"	book/	45	.jpg	"	class="bookimg">
+<img src=	"	book/	46	.jpg	"	class="bookimg">
+<img src=	"	book/	47	.jpg	"	class="bookimg">
+<img src=	"	book/	48	.jpg	"	class="bookimg">
+<img src=	"	book/	49	.jpg	"	class="bookimg">
+<img src=	"	book/	50	.jpg	"	class="bookimg">
+<img src=	"	book/	51	.jpg	"	class="bookimg">
+<img src=	"	book/	52	.jpg	"	class="bookimg">
+<img src=	"	book/	53	.jpg	"	class="bookimg">
+<img src=	"	book/	54	.jpg	"	class="bookimg">
+<img src=	"	book/	55	.jpg	"	class="bookimg">
+<img src=	"	book/	56	.jpg	"	class="bookimg">
+<img src=	"	book/	57	.jpg	"	class="bookimg">
+<img src=	"	book/	58	.jpg	"	class="bookimg">
+<img src=	"	book/	59	.jpg	"	class="bookimg">
+<img src=	"	book/	60	.jpg	"	class="bookimg">
+<img src=	"	book/	61	.jpg	"	class="bookimg">
+<img src=	"	book/	62	.jpg	"	class="bookimg">
+<img src=	"	book/	63	.jpg	"	class="bookimg">
+<img src=	"	book/	64	.jpg	"	class="bookimg">
+<img src=	"	book/	65	.jpg	"	class="bookimg">
+<img src=	"	book/	66	.jpg	"	class="bookimg">
+<img src=	"	book/	67	.jpg	"	class="bookimg">
+<img src=	"	book/	68	.jpg	"	class="bookimg">
+<img src=	"	book/	69	.jpg	"	class="bookimg">
+<img src=	"	book/	70	.jpg	"	class="bookimg">
+<img src=	"	book/	71	.jpg	"	class="bookimg">
+<img src=	"	book/	72	.jpg	"	class="bookimg">
+<img src=	"	book/	73	.jpg	"	class="bookimg">
+<img src=	"	book/	74	.jpg	"	class="bookimg">
+<img src=	"	book/	75	.jpg	"	class="bookimg">
+<img src=	"	book/	76	.jpg	"	class="bookimg">
+<img src=	"	book/	77	.jpg	"	class="bookimg">
+<img src=	"	book/	78	.jpg	"	class="bookimg">
+<img src=	"	book/	79	.jpg	"	class="bookimg">
+<img src=	"	book/	80	.jpg	"	class="bookimg">
+<img src=	"	book/	81	.jpg	"	class="bookimg">
+
+<img src=	"	book/	85	.jpg	"	class="bookimg">
+
+<img src=	"	book/	93	.jpg	"	class="bookimg">
+<img src=	"	book/	94	.jpg	"	class="bookimg">
+<img src=	"	book/	95	.jpg	"	class="bookimg">
+
+<img src=	"	book/	97	.jpg	"	class="bookimg">
+<img src=	"	book/	98	.jpg	"	class="bookimg">
+<img src=	"	book/	99	.jpg	"	class="bookimg">
+
+<img src=	"	book/	101	.jpg	"	class="bookimg">
+
+                           
+                       </div>
+                       <div id="sisoparty">
+                           <div class="partyimg">
+                               <img src="siso/jaehoon/1.jpg" class="smallimg" style="top:0;">
+                           </div>
+                           
+                           <div class="partyimg">
+                               <img src="siso/hangyeol/DSC09804.jpg" class="smallimg" style="top:0%">
+                           </div>
+                           
+                           <div class="partyimg">
+                               <img src="siso/dohyun/2.jpg" class="smallimg">
+                           </div>
+                           
+                           
+                           
+                           <div class="partyimg">
+                               <img src="siso/sangha/p12.jpg" class="smallimg">
+                           </div>
+                           
+                           <div class="partyimg">
+                               <img src="siso/sangwoon/02670001.jpg" class="smallimg" style="top:-30%">
+                           </div>
+                           
+                           <div class="partyimg">
+                               <img src="siso/jooyun/6.jpg" class="smallimg">
+                           </div>
+                           
+                           <div class="partyimg">
+                               <img src="siso/elison/1.jpg" class="smallimg">
+                           </div>
+                           
+                           
+                           
+                           <div class="partyimg">
+                               <img src="siso/jiyae/2.jpg" class="smallimg" style="top:-25%; left: -25%">
+                           </div>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                       </div>
+                   </div>
+               </div>
+       </div>
+   </div>
+    
+</body>
+
+<script>
+
+  function siso() {
+  document.getElementById("sisopages").style.height = "96vh";
+  document.getElementById("lovehipspages").style.height = "0vh";
+  document.getElementById("opening").style.height = "4vh";
+} 
+    
+function lovehips() {
+  document.getElementById("lovehipspages").style.height = "96vh";
+  document.getElementById("sisopages").style.height = "0vh";
+  document.getElementById("opening").style.height = "4vh";
+}  
+    
+  function sangha() {
+  document.getElementById("sisopages").style.height = "0vh";
+  document.getElementById("opening").style.height = "4vh";
+  document.getElementById("sangha").style.width = "85vw";
+  document.getElementById("about").style.display = "none";
+  document.getElementById("video").style.display = "none";    
+        
+}  
+    
+    function back() {
+  
+  document.getElementById("sangha").style.width = "0vw";
+  document.getElementById("about").style.display = "block";
+  document.getElementById("video").style.display = "block";    
+        
+}  
+    
+</script>
     
 
-         
-</body>
+
+</html>

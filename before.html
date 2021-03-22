@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IloveHIPS</title>
+    
+    
+    <style>    
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .box {
+            font-family: sans-serif;
+        }
+        
+        .container{
+         
+         
+         line-height: 18px;
+            
+     
+        }
+        
+        .logo {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        
+        .content {
+            position: relative;
+            top:0px;
+            margin-left:10px;
+            margin-top: 50px;
+            font-size: 13px;
+            padding-right: 100px;
+            
+            
+            
+        }
+        
+        .heart{
+         position: relative;
+         left: 10px;
+         margin-top: 0px;
+         
+        
+        }
+        
+        .nav {
+            position: fixed;
+            top:8px;
+            z-index: 5;
+        }
+        
+        .info {
+            position: relative;
+            top:100px;
+            left:10px;
+            
+            font-size:13px;
+        }
+        
+
+        
+     </style>    
+     
+      
+     <script type="text/javascript">
+    var love_hips_main_img = ["01.jpg", "02.jpg", "03.jpg", "04.jpg"];
+         
+    function getRandomImage(imgAr, path) {
+    path = path || 'lovehips/'; 
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+     </script>
+     
+    
+</head>
+
+ 
+<body>
+     <div class="box">
+            <div class="nav">
+                <a href="index.html">
+                <img src="img/logo.png" width="55px" class="logo">
+                </a>
+                    
+                    <a href="about.html">
+                    <img src="img/heart1.png" width="20px" class="heart">
+                    </a>
+
+                    <a href="newartist.html">
+                    <img src="img/heart2.png" width="20px" class="heart">
+                    </a>
+
+                    <a href="exhibition.html">
+                    <img src="img/heart3.png" width="20px" class="heart">
+                    </a>
+                    
+
+            </div>
+            
+            <div class="container">
+           
+           
+            
+                
+            
+                <div class="content">
+                    
+                     
+                  <a href="index.html" class="img"><script type="text/javascript">getRandomImage(love_hips_main_img); </script>   
+                  </a>
+                                                                                                   
+                
+                </div>
+            </div>
+    </div>
+       
+       
+    
+
+         
+</body>
