@@ -2,6 +2,27 @@ body{
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
+    
+    font-family: sandoll-gothicneo3, sans-serif;
+
+font-weight: 200;
+
+font-style: normal;
+    
+    font-size: 1em;
+    line-height: 20px;
+}
+
+#block{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    z-index: 10;
+    text-align: center;
+    padding-top: 40vh;
+    display: none;
 }
 
 #dark{
@@ -19,6 +40,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 #opening{
     position: absolute;
     width: 100vw;
@@ -48,41 +70,69 @@ a{
     width: 100vw;
     height: 100vh;
     
-    background: linear-gradient(to right, red 0%, red 48%,white 50%,black 52%, black 100%);
+    background: linear-gradient(to right, white 0%, red 50%, black 51%, white 100%);
     z-index: 1;
-    transition: 1s;
+    
     
 }
 
 #lovehipspages{
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 0vh;
     
     bottom: 0px;
-   
-    transition: 1s;
     background-color: white;
+    transition: 1s;
     
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
+
 .back{
     position: sticky;
     top:1vh;
     left: 0px;
+    width: 3vw;
+    height: 1vw;
     cursor: pointer;
     font-size: 3vw;
     z-index: 9;
     color: white;
     background-color: black;
+    
+    text-align: center;
 }
 
+
 img{z-index: 8}
-.head{
+
+#aboutheader{
     position: sticky;
     top:0px;
     left: 0px;
+    width: 100%;
+    height: 15%;
+    cursor: move;
+    border-bottom: 1px dotted red;
+}
+
+#worksheader{
+    position: sticky;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 4%;
+    
+    border-bottom: 1px dotted red;
+}
+
+#videoheader{
+    position: sticky;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 15%;
+    cursor: move;
+    border-bottom: 1px dotted red;
 }
 
 .info{
@@ -90,54 +140,245 @@ img{z-index: 8}
 }
 
 #about{
-    border-right: 1px solid red;
+    position: absolute;
+    left: 5vw;
+    top:5vh;
+    width: 20vw;
+    height: 25vh;
+    border:1px dotted red;
     padding: 1vw;
-    transition: 1s;
+    overflow-y: scroll;
+    
     
 }
 
 #works{
-    border-right: 1px solid red;
-    padding: 1vw;
+    position: absolute;
+    left: 15vw;
+    top:2vh;
+    width: 75vw;
+    height: 90vh;
     overflow-y: scroll;
+    
+    
+    border: 1px dotted red;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 3vh;
+    
     transition: 1s;
+    
+   
+    
 }
+
+
 
 .work{
     font-size: 12px;
-    
     padding-bottom: 2vh;
+    width: 50vw;
+    display: inline;
+    text-align: left;
+    
 }
+
+.artistname{
+    background-color: black;
+    color: white;
+    width:3vw;
+    height: 3vw;
+    text-align: center;
+    display: inline-block;
+    padding: 1px;
+    
+    font-size: 10px;
+}
+
 .worksmallimg{
     position: relative;
     width: 20vw;
     height: 20vw;
     overflow: hidden;
-    
+    margin-left: 1vw;
     margin-top: 2vh;
     margin-bottom: 1vh;
+    display: inline-block
 }
 
-.works{
+.workimg{
+    width: 80%;
+   margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.workimgvertical{
+    width: 46%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+
+
+.jhworkimg{
+    width: 40%;
+    position: relative;
+    display: inline-block; 
+     cursor: pointer;
+}
+
+.jyworkimg{
+    width: 17%;
+    position:inherit;
+    display:inline-block; 
+    margin-right: 1vw;
+    
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.hgworkimg{
+    width: 12%;
+    position:inherit;
+    display:inline-block; 
+    margin-right: 1vw;
+    margin-bottom: 1vw;  
+   
+}
+
+.dhworkimg{
+    width: 60%;
+    position:inherit;
+    display:inline-block; 
+    
+    margin-left: 14vw;  
+   
+}
+
+
+   
+.jhwrapper{
+    transform: rotate(180deg);
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:  3vw;
+    margin-top: 10vh;
+}
+
+#jhworktext{
+    position: relative;
+    top:0px;
+    right: 0px;
+    width: 30vw;
+    height: 80vh;
+    color: white;
+    padding-left: 30vw;
+    margin-top: 50vh;
+    
+}
+
+.change{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+   
+
+    z-index: 9;
+    
+}
+
+.pages{
     
     
     background-color: white;
     
-    padding: 0.5vw;
+    
     overflow-y: scroll;
-    cursor: pointer;
-    margin-bottom: 3vh;
+    overflow-x: hidden;
     
     
+    height: 100%;
+    
+     
     
 }
 
-#sangha{position: absolute;
+
+#sangha
+   {position: absolute;
     top:0px;
-    right: -10%;
+    left: 25vw;
     width: 0vw;
-    height: 96vh;
-    transition: 1s;}
+    transition: 1s;
+    }
+
+#jaehoon
+   {position: absolute;
+    top:0px;
+    left: 25vw;
+    width: 0vw;
+    transition: 1s;
+    }
+
+#jiyae
+   {position: absolute;
+    top:0px;
+    left: 25vw;
+    width: 0vw;
+    transition: 1s;
+    }
+
+#hangyeol
+   {position: absolute;
+    top:0px;
+    left: 25vw;
+    width: 0vw;
+    transition: 1s;
+    }
+
+#dohyun
+   {position: absolute;
+    top:0px;
+    left: 25vw;
+    width: 0vw;
+    transition: 1s;
+    }
+
+
+
+.dhimg{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.active{
+  background-color: #717171;
+}
 
 .name{
     font-size: 15px;
@@ -154,7 +395,11 @@ img{z-index: 8}
     width: 100%;
     height: auto;
     background-color: black;
-    padding: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    
 }
 
 
@@ -165,6 +410,8 @@ img{z-index: 8}
     width: 100%;
     height: 70%;
     background-color: white;
+    margin-top: 3vw;
+    padding-bottom:  3vw;
 }
 
 
@@ -173,10 +420,16 @@ img{z-index: 8}
 }
 
 #video{
-    border-right: 1px solid red;
+    position: absolute;
+    left: 70vw;
+    top:60vh;
+    width: 20vw;
+    height: 25vh;
+    border:1px dotted red;
     padding: 1vw;
     overflow-y: scroll;
-    transition: 1s;
+    background-color: white;
+    
 }
 
 #siso{
@@ -197,17 +450,21 @@ img{z-index: 8}
     
     bottom: 0px;
     background-color: black;
-    transition: 1s;
+    
     
     display: grid;
     grid-template-columns: 25vw 1fr;
+    
+    transition: 1s;
 }
 
 #sisotext{
    position: relative;
-    width: 100%;
+    width: 90%;
     height: 100%;
     border-right: 1px solid white;
+    color: white;
+    padding: 1vw;
 }
 
 #sisoimg{
@@ -269,4 +526,10 @@ img{z-index: 8}
 
     left: -20%;
     filter: grayscale();
+}
+
+@media screen and (max-width: 768px){
+    #block{
+        display: block;
+    }
 }

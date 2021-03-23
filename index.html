@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <title>ILOVEHIPS</title>
     <link rel="stylesheet" href="ilovehips.css">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'obb4mnj',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
  
     
 </head>
 <body>
-   
+   <div id="block">
+   <p>ILOVEHIPS.KR은 현재 모바일 환경에서 작동하지 않습니다.</p>
+   </div>
    <div class="wrapper">
-      <div id="dark">
-          <p>HIPS 웹사이트는 3월 23일 오픈 예정입니다. </p>
-      </div>
+      
        <div id="opening">
                <div id="lovehips" onclick="lovehips()"></div>
                <div id="siso" onclick="siso()"></div>
        </div>
        <div class="container">
                <div id="lovehipspages">
-                  
+                    
+                     
                    <div id="about">
-                   <div class="head">
-                   <img src="img/heart1.png" style="width: 3%;">
+                   <div id="aboutheader">
+                   <img src="img/heart1.png" style="width: 5%;">
                    <span>About</span>
                    </div>
                     <div class="info">
@@ -38,8 +49,9 @@
                    </div>
                    
                    <div id="works">
-                    <div class="head">
-                   <img src="img/heart2.png" style="width: 3%;">
+                   
+                    <div id="worksheader">
+                   <img src="img/heart2.png" style="width: 1.5%;">
                    <span>Works</span>
                    </div>
                    
@@ -47,56 +59,75 @@
                        <div class="worksmallimg">
                        <img src="hips/sangha/10-3.jpg" style="width: 100%;" onclick="sangha()">
                        </div>
+                       <div class="artistname">
                        <span>김상하</span>
+                       </div>
                    </div>
                    
                    <div class="work">
                        <div class="worksmallimg">
-                       <img src="hips/jaehoon/4.jpg" style="width: 150%;">
+                       <img src="hips/jaehoon/4.jpg" style="width: 150%;"
+                       onclick="jaehoon()">
                        </div>
+                       <div class="artistname">
                        <span>김재훈</span>
+                       </div>
                    </div>
                    
                    <div class="work">
                        <div class="worksmallimg">
-                       <img src="hips/jiyae/1.jpg" style="width: 150%;">
+                       <img src="hips/jiyae/1.jpg" style="width: 150%;" onclick="jiyae()">
                        </div>
+                       <div class="artistname">
                        <span>김지예</span>
+                       </div>
                    </div>
                    
                    <div class="work">
                        <div class="worksmallimg">
-                       <img src="hips/hangyeol/07.jpg" style="width: 100%;">
+                       <img src="hips/hangyeol/07.jpg" style="width: 100%;" onclick="hangyeol()">
                        </div>
+                       <div class="artistname">
                        <span>김한결</span>
+                       </div>
                    </div>
                    
                    <div class="work">
                        <div class="worksmallimg">
-                       <img src="hips/dohyun/1.jpg" style="width: 100%;">
+                       <img src="hips/dohyun/1.jpg" style="width: 100%;" onclick="dohyun()">
                        </div>
+                       <div class="artistname">
                        <span>박도현</span>
+                       </div>
                    </div>
                    
+                   <!--
                    <div class="work">
                        <div class="worksmallimg">
                        <img src="hips/taeho/19-1.png" style="width: 130%;">
                        </div>
+                       <div class="artistname">
                        <span>박태호</span>
+                       </div>
                    </div>
                    
                     <div class="work">
                        <div class="worksmallimg">
                        <img src="hips/elison/01.jpg" style="width: 150%;">
                        </div>
+                       <div class="artistname">
                        <span>앨리손</span>
+                        </div>
                    </div>
                    
                    <div class="work">
                        <div class="worksmallimg">
                        <img src="hips/sangwoon/1.jpg" style="width: 100%;">
                        </div>
+                       <div class="artistname">
                        <span>정상운</span>
+                       </div>
+                    -->   
                    </div>
                    
                    
@@ -105,8 +136,8 @@
                    </div>
                    
                    <div id="video">
-                       <div class="head">
-                   <img src="img/heart3.png" style="width: 3%;">
+                   <div id="videoheader">
+                   <img src="img/heart3.png" style="width: 5%;">
                    <span>Video</span>
                    
                    </div>
@@ -148,8 +179,8 @@
                    </div>
                    
                    <div id="workswrapper">
-                       <div id="sangha" class="work">
-                        <span onclick="back()" class="back">&rarr;</span>   
+                       <div id="sangha" class="pages">
+                        <div class="back"><span onclick="back()">&rarr;</span></div>   
                            
                            
                               <div class="sisowork">
@@ -157,47 +188,265 @@
                               <div class="name">
                                <p>김상하</p>
                                <p>무제, 2020 <br> 흑백 포트레이트 연습 습작</p>
-                           </div><img src="siso/sangha/p1.jpg" style="width: 40%">
-                           <img src="siso/sangha/p2.jpg" style="width: 40%">
-                           <img src="siso/sangha/p3.jpg" style="width: 40%">
-                           <img src="siso/sangha/p4.jpg" style="width: 40%">
-                           <img src="siso/sangha/p5.jpg" style="width: 40%">
-                           <img src="siso/sangha/p6.jpg" style="width: 40%">
-                           <img src="siso/sangha/p7.jpg" style="width: 40%">
-                           <img src="siso/sangha/p8.jpg" style="width: 40%">
-                           <img src="siso/sangha/p9.jpg" style="width: 40%">
-                           <img src="siso/sangha/p10.jpg" style="width: 40%">
-                           <img src="siso/sangha/p11.jpg" style="width: 40%">
-                           <img src="siso/sangha/p12.jpg" style="width: 40%">
-                           <img src="siso/sangha/p13.jpg" style="width: 40%">
-                           <img src="siso/sangha/p14.jpg" style="width: 40%">
-                           <img src="siso/sangha/p15.jpg" style="width: 40%">
-                           <img src="siso/sangha/p16.jpg" style="width: 40%">
-                           <img src="siso/sangha/p17.jpg" style="width: 40%">
+                           </div><img src="siso/sangha/p1.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p2.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p3.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p4.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p5.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p6.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p7.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p8.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p9.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p10.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p11.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p12.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p13.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p14.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p15.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p16.jpg" class="workimgvertical">
+                           <img src="siso/sangha/p17.jpg" class="workimgvertical">
                            
                            </div>
                            
                            <div class="previouswork">
-                            <img src="hips/sangha/1.jpg" style="width: 40%">
-                            <img src="hips/sangha/10-2.jpg" style="width: 40%">
-                            <img src="hips/sangha/3.jpg" style="width: 40%">
-                            <img src="hips/sangha/4.jpg" style="width: 40%">
-                            <img src="hips/sangha/5.jpg" style="width: 40%">
-                            <img src="hips/sangha/6.jpg" style="width: 40%">
-                            <img src="hips/sangha/9.jpg" style="width: 40%">
-                            <img src="hips/sangha/10.jpg" style="width: 40%">
+                            <img src="hips/sangha/1.jpg" class="workimgvertical">
+                            <img src="hips/sangha/10-2.jpg" class="workimgvertical">
+                            <img src="hips/sangha/3.jpg" class="workimg">
+                            <img src="hips/sangha/4.jpg" class="workimg">
+                            <img src="hips/sangha/5.jpg" class="workimg">
+                            <img src="hips/sangha/6.jpg" class="workimg">
+                            <img src="hips/sangha/9.jpg" class="workimg">
+                            <img src="hips/sangha/10.jpg" class="workimg">
                             
                            </div>
                        </div>
+                       
+                       <div id="jaehoon" class="pages">
+                        <div class="back"><span onclick="back()">&rarr;</span></div>   
+                           
+                           
+                              <div class="sisowork">
+                              
+                              <div class="name">
+                               <p>김재훈</p>
+                               <p>아직 제목 없음, 2021 <br> 1. 재훈은 친구들에게 치마를 선물하기로 마음 먹었습니다. <br>
+2. 그렇게 빈티지 의류점에 가 치마를 선물합니다.<br>
+3. 친구와 재훈은 사람들로부터 안전한 공간에 가 치마를 입었습니다.<br>
+4. 그리고는 사진을 찍으며 놀았답니다.<br><br>*현재 본 작업은 2번과 4번, 두 종류의 사진들로 구성되어 있습니다.
+본 전시에서는 4번에 해당하는 사진들을 보실 수 있습니다.</p>
+                           </div><img src="siso/jaehoon/1.jpg" class="jhworkimg" onclick="biggerimg(this)">
+                           <img src="siso/jaehoon/2.jpg" class="jhworkimg" onclick="biggerimg(this)">
+                           <img src="siso/jaehoon/3.jpg" class="jhworkimg" onclick="biggerimg(this)">
+                           <img src="siso/jaehoon/4.jpg" class="jhworkimg" onclick="biggerimg(this)">
+                           
+                           <img src="siso/jaehoon/5.jpg" class="jhworkimg" style="margin-top: 1vw;" onclick="biggerimg(this)">
+                           <img src="siso/jaehoon/6.jpg" class="jhworkimg" onclick="biggerimg(this)">
+                           <img src="siso/jaehoon/7.jpg" class="jhworkimg" onclick="biggerimg(this)">
+                           <img src="siso/jaehoon/8.jpg" class="jhworkimg" onclick="biggerimg(this)">
+                           
+                           
+                           </div>
+                           
+                           <div class="previouswork">
+                            <img src="hips/jaehoon/1.jpg" class="workimg">
+                            <img src="hips/jaehoon/2.jpg" class="workimg">
+                            <img src="hips/jaehoon/3.jpg" class="workimg">
+                            <img src="hips/jaehoon/4.jpg" class="workimg">
+                            
+                            
+                           </div>
+                       </div>
+                       
+                       <div id="jiyae" class="pages">
+                        <div class="back"><span onclick="back()">&rarr;</span></div>   
+                           
+                           
+                              <div class="sisowork">
+                              
+                              <div class="name">
+                               <p>김지예</p>
+                              
+                           </div>
+                           <div class="jhwrapper">
+                           <img src="siso/jiyae/5.jpg" class="jyworkimg" onclick="biggerimg(this)">
+                           
+                           <img src="siso/jiyae/4.jpg" class="jyworkimg" onclick="biggerimg(this)">
+                           <img src="siso/jiyae/3.jpg" class="jyworkimg" onclick="biggerimg(this)">
+                           <img src="siso/jiyae/2.jpg" class="jyworkimg" onclick="biggerimg(this)">
+                           
+                           <img src="siso/jiyae/1.jpg" class="jyworkimg" style="margin-top: 1vw;" onclick="biggerimg(this)">
+                           </div>
+                           <div id="jhworktext">
+                            <p>dek-, 2021 <br>개인에게 요구되는 당위를 거부하고 ‘나’라는 주체를
+전면에 내세우는 것은 각자의 정체성을 말하기에 충분하다.<br><br>
+
+‘dek-‘란 받아들인다는 뜻을 가진 어원으로 document(문서),
+Documentary(다큐멘터리)가 이를 근간으로 두고 있다. <br>
+객관적이고 관조적인 태도를 통해 개인이 고유함을 보여주고자 한다.'<br><br>
+
+가장 나다워야 하는 사진 형식에서 흘러나온 찰나의 감정과 시각적
+이야기를 담아내 가장 솔직한 서사를 건넨다. </p>
+                          </div>
+                           </div>
+                           
+                           <div class="previouswork">
+                            <img src="hips/jiyae/1.jpg" class="workimg">
+                            <img src="hips/jiyae/3.jpg" class="workimg">
+                            <img src="hips/jiyae/2.jpg" class="workimgvertical">
+                            
+                            <img src="hips/jiyae/4.jpg" class="workimgvertical">
+                            
+                            
+                           </div>
+                       </div>
+                       
+                       <div id="hangyeol" class="pages">
+                        <div class="back"><span onclick="back()">&rarr;</span></div>   
+                           
+                           
+                              <div class="sisowork">
+                              
+                              <div class="name">
+                               <p>김한결</p>
+                               <p>시선맞추기, 2021 <br>모델은 촬영자를 보지 못한다.<br>
+카메라와 인물은 모두 고정된 상태이다.<br>
+모델은 셔터를 누르는 속도와 기준을 알지 못한다.<br>
+모델의 위치는 고정되지만 몸을 움직이는 것은 가능하다.<br>
+모델은 최대한 카메라 렌즈를 보려고 노력하되, 긴장을 해소하기 위한 행동을 할 수 있다.</p>
+                           </div>
+                           
+                           <img src="siso/hangyeol/DSC09804.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09854.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09855.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09868.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09870.jpg" class="hgworkimg" >
+                           
+                           
+                           
+                           <img src="siso/hangyeol/DSC09871.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09872.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09877.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09879.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09886.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09887.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09888.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09890.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09891.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09892.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09893.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09900.jpg" class="hgworkimg" >
+                           
+                           <img src="siso/hangyeol/DSC09901.jpg" class="hgworkimg" >
+                           
+                            <img src="siso/hangyeol/DSC09903.jpg" class="hgworkimg" >
+                            
+                             <img src="siso/hangyeol/DSC09904.jpg" class="hgworkimg" >
+                             
+                             
+                           
+                           <img src="siso/hangyeol/DSC09915.jpg" class="hgworkimg" >
+                           </div>
+                           
+                           
+                           
+                           <div class="previouswork">
+                           <img src="hips/hangyeol/02.jpg" class="workimg">
+                            <img src="hips/hangyeol/01.jpg" class="workimg">
+                            
+                            <img src="hips/hangyeol/03.jpg" class="workimg">
+                            <img src="hips/hangyeol/04.jpg" class="workimg">
+                            <img src="hips/hangyeol/05.jpg" class="workimg">
+                            <img src="hips/hangyeol/06.jpg" class="workimg">
+                            
+                            
+                           </div>
+                       </div>
+                       
+                       <div id="dohyun" class="pages">
+                        <div class="back"><span onclick="back()">&rarr;</span></div>   
+                           
+                           
+                              <div class="sisowork">
+                              
+                              <div class="name">
+                               <p>박도현</p>
+                               <p>외딴방 (가제), 2021</p>
+                           </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            <div class="dhpages">
+                            
+                            <div class="dhimg">
+                           <img src="siso/dohyun/1.jpg" class="dhworkimg" >
+                           </div>
+                           
+                           <div class="dhimg">
+                           <img src="siso/dohyun/2.jpg" class="dhworkimg" >
+                           </div>
+                           
+                           
+                           
+                            <div class="dhimg">
+                           <img src="siso/dohyun/4.jpg" class="dhworkimg" >
+                                </div>
+                           
+                            <div class="dhimg">
+                           <img src="siso/dohyun/5.jpg" class="dhworkimg" >
+                                </div>
+                                
+                            <div class="dhimg">
+                           <img src="siso/dohyun/6.jpg" class="dhworkimg" >
+                                </div>
+                                
+                                 <div class="dhimg">
+                           <img src="siso/dohyun/3.jpg" class="dhworkimg" >
+                                </div>
+                           
+                           </div>
+                           </div>
+                           
+                           
+                           
+                           <div class="previouswork">
+                           <img src="hips/dohyun/1.jpg" class="workimgvertical">
+                            <img src="hips/dohyun/2.jpg" class="workimg">
+                            
+                            <img src="hips/dohyun/3.jpg" class="workimg">
+                            <img src="hips/dohyun/4.jpg" class="workimg">
+                            <img src="hips/dohyun/5.jpg" class="workimg">
+                            <img src="hips/dohyun/6.jpg" class="workimg">
+                            
+                            
+                           </div>
+                       </div>
+                       
                    </div>
                </div>
                <div id="sisopages">
                    <div id="sisotext">
-                       
+                      <p>2021 홍익대학교 시각디자인과<br>소모임 연합전시 힙스</p>
+                      <img src="logo.png" style="width: 80%">
+                       <p>20대는 작업자 스스로이자 그들의 시선/관심사가 자연스레 향하게 되는 대상이다. 스스로의 재정의로 범주화에서 벗어나 ‘나'이고 ‘너'이자 ‘우리'인 20대가 걷는 길을 사진매체를 통해 톺아본다.</p>
                    </div>
                    
                    <div id="sisoimg">
-                       <div id="book">
+                <div id="book">
 <img src=	"	book/	1	.jpg	"	class="bookimg">
 <img src=	"	book/	2	.jpg	"	class="bookimg">
 <img src=	"	book/	3	.jpg	"	class="bookimg">
@@ -362,29 +611,230 @@ function lovehips() {
   function sangha() {
   document.getElementById("sisopages").style.height = "0vh";
   document.getElementById("opening").style.height = "4vh";
-  document.getElementById("sangha").style.width = "85vw";
-   document.getElementById("works").style.left = "-30vw"; 
-  document.getElementById("lovehipspages").style.gridTemplateColumns = "0px 1fr 0px";     
-  document.getElementById("about").style.opacity = "0";
-  
-  document.getElementById("video").style.opacity = "0";  
-       
-        
+  document.getElementById("sangha").style.width = "74.5vw";
+  document.getElementById("works").style.left = "0px"; 
+  document.getElementById("works").style.top = "0px";
+  document.getElementById("works").style.width = "22vw"; 
+  document.getElementById("about").style.display = "none";
+  document.getElementById("video").style.display = "none";
+      
+  document.getElementById("jaehoon").style.width = "0vw";
+  document.getElementById("jiyae").style.width = "0vw";     document.getElementById("hangyeol").style.width = "0vw";
+   document.getElementById("dohyun").style.width = "0vw";       
+             
+}
+    
+  function jaehoon() {
+  document.getElementById("sisopages").style.height = "0vh";
+  document.getElementById("opening").style.height = "4vh";
+  document.getElementById("jaehoon").style.width = "74.5vw";
+  document.getElementById("works").style.left = "0px"; 
+  document.getElementById("works").style.top = "0px";
+  document.getElementById("works").style.width = "22vw"; 
+  document.getElementById("about").style.display = "none";
+  document.getElementById("video").style.display = "none"; 
+      
+  document.getElementById("sangha").style.width = "0vw";
+  document.getElementById("jiyae").style.width = "0vw";      document.getElementById("hangyeol").style.width = "0vw"; 
+   document.getElementById("dohyun").style.width = "0vw";       
+             
 }  
+    
+    function jiyae() {
+  document.getElementById("sisopages").style.height = "0vh";
+  document.getElementById("opening").style.height = "4vh";
+  document.getElementById("jiyae").style.width = "74.5vw";
+  document.getElementById("works").style.left = "0px"; 
+  document.getElementById("works").style.top = "0px";
+  document.getElementById("works").style.width = "22vw"; 
+  document.getElementById("about").style.display = "none";
+  document.getElementById("video").style.display = "none"; 
+      
+  document.getElementById("sangha").style.width = "0vw";
+  document.getElementById("jaehoon").style.width = "0vw";   document.getElementById("hangyeol").style.width = "0vw";
+   document.getElementById("dohyun").style.width = "0vw";         
+             
+} 
+    
+  function hangyeol() {
+  document.getElementById("sisopages").style.height = "0vh";
+  document.getElementById("opening").style.height = "4vh";
+  document.getElementById("hangyeol").style.width = "74.5vw";
+  document.getElementById("works").style.left = "0px"; 
+  document.getElementById("works").style.top = "0px";
+  document.getElementById("works").style.width = "22vw"; 
+  document.getElementById("about").style.display = "none";
+  document.getElementById("video").style.display = "none"; 
+      
+  document.getElementById("sangha").style.width = "0vw";
+  document.getElementById("jaehoon").style.width = "0vw"; 
+  document.getElementById("jiyae").style.width = "0vw";
+  document.getElementById("dohyun").style.width = "0vw";      
+             
+} 
+    
+    function dohyun() {
+  document.getElementById("sisopages").style.height = "0vh";
+  document.getElementById("opening").style.height = "4vh";
+  document.getElementById("dohyun").style.width = "74.5vw";
+  document.getElementById("works").style.left = "0px"; 
+  document.getElementById("works").style.top = "0px";
+  document.getElementById("works").style.width = "22vw"; 
+  document.getElementById("about").style.display = "none";
+  document.getElementById("video").style.display = "none"; 
+      
+  document.getElementById("sangha").style.width = "0vw";
+  document.getElementById("jaehoon").style.width = "0vw"; 
+  document.getElementById("jiyae").style.width = "0vw"; 
+  document.getElementById("hangyeol").style.width = "0vw";        
+             
+} 
     
     function back() {
   
   document.getElementById("sangha").style.width = "0vw";
+  document.getElementById("jaehoon").style.width = "0vw";  
+  document.getElementById("jiyae").style.width = "0vw"; 
+  document.getElementById("hangyeol").style.width = "0vw";
+   document.getElementById("dohyun").style.width = "0vw";         
+        
+        
   document.getElementById("about").style.display = "block";
   document.getElementById("video").style.display = "block";
-  document.getElementById("lovehipspages").style.gridTemplateColumns = "1fr 1fr 1fr";     
-  document.getElementById("about").style.opacity = "100";
+  document.getElementById("works").style.left = "15vw"; 
+  document.getElementById("works").style.top = "2vh";
+  document.getElementById("works").style.width = "75vw";       
   
-  document.getElementById("video").style.opacity = "100"; 
         
 }  
     
+  function biggerimg(x) {
+  x.classList.toggle("change");
+} 
+    
+    
+    
 </script>
+   <script>
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("dhimg");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+   <script>
+    
+    // Make the DIV element draggable:
+dragElement(document.getElementById("about"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}   </script>
+  
+   <script>
+    
+    // Make the DIV element draggable:
+dragElement(document.getElementById("video"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}   </script>
     
 
 
