@@ -145,13 +145,15 @@ img{z-index: 8}
 
 #about{
     position: absolute;
-    left: 5vw;
-    top:5vh;
+    left: 2vw;
+    top:12vh;
     width: 20vw;
     height: 25vh;
     border:1px dotted red;
     padding: 1vw;
     overflow-y: scroll;
+    z-index: 9;
+    background-color: white;
     
     
 }
@@ -425,8 +427,8 @@ img{z-index: 8}
 
 #video{
     position: absolute;
-    left: 70vw;
-    top:60vh;
+    left: 74vw;
+    top:64vh;
     width: 20vw;
     height: 25vh;
     border:1px dotted red;
