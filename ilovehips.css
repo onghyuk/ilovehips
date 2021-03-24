@@ -10,7 +10,7 @@ font-weight: 200;
 font-style: normal;
     
     font-size: 1em;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 #block{
@@ -182,7 +182,7 @@ img{z-index: 8}
 
 
 .work{
-    font-size: 12px;
+    font-size: 10px;
     padding-bottom: 2vh;
     width: 50vw;
     display: inline;
@@ -262,6 +262,71 @@ img{z-index: 8}
    
 }
 
+.jyunworkimg{
+    width: 20%;
+    position:inherit;
+    display:block; 
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+   
+}
+
+#jytext{
+    position: relative;
+    top:-30%;
+    text-align: center;
+    max-width: 30vw;
+    color: white;
+    
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+.sework{
+   
+    
+    top:40vh;
+    
+    display: inline;
+    vertical-align: top;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 30vw 1fr;
+}
+
+
+
+
+.seworkimg{
+    width: 80%;
+    display: inline;
+    vertical-align: top;
+    
+    
+}
+
+
+
+.setext{
+    font-size: 11px;
+    color: white;
+    margin-bottom: 5vw;
+}
+
+#setext1{
+    display: none;
+    color: white;
+    left: 0vw;
+}
+
+
+
 
    
 .jhwrapper{
@@ -323,6 +388,14 @@ img{z-index: 8}
     transition: 1s;
     }
 
+#jooyun
+   {position: absolute;
+    top:0px;
+    left: 25vw;
+    width: 0vw;
+    transition: 1s;
+    }
+
 #jaehoon
    {position: absolute;
     top:0px;
@@ -355,6 +428,31 @@ img{z-index: 8}
     transition: 1s;
     }
 
+#elison
+   {position: absolute;
+    top:0px;
+    left: 25vw;
+    width: 0vw;
+    transition: 1s;
+    }
+.elisonpage{
+    text-align: center;
+    color: white;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+    font-size: 13px;
+    
+}
+
+#seun
+   {position: absolute;
+    top:0px;
+    left: 25vw;
+    width: 0vw;
+    transition: 1s;
+    }
 
 
 .dhimg{
@@ -387,7 +485,7 @@ img{z-index: 8}
 }
 
 .name{
-    font-size: 15px;
+    font-size: 12px;
     background-color: black;
     color: white;
     
@@ -400,6 +498,17 @@ img{z-index: 8}
 .sisowork{
     width: 100%;
     height: auto;
+    background-color: black;
+    padding-left: 1vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    
+}
+
+.sesisowork{
+    width: 100%;
+    height: 120vh;
     background-color: black;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -418,6 +527,7 @@ img{z-index: 8}
     background-color: white;
     margin-top: 3vw;
     padding-bottom:  3vw;
+    padding-left: 3vw;
 }
 
 
