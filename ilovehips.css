@@ -307,6 +307,7 @@ img{z-index: 8}
     width: 80%;
     display: inline;
     vertical-align: top;
+    margin-bottom: 5vw;
     
     
 }
@@ -316,7 +317,7 @@ img{z-index: 8}
 .setext{
     font-size: 11px;
     color: white;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
 
 #setext1{
